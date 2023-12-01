@@ -21,13 +21,26 @@
     background-color: var(--dark-blue);
   }
 
-  .container > .title {
+  .container > .center {
+    text-align: center;
+  }
+
+  .subline {
+    margin: 1em 6em;
+    padding: 1em 0em;
+    border-radius: 9em;
+    font-size: 14px;
+    background-color: var(--dark-blue);
+    color: var(--orange);
+  }
+
+  .title {
     font-size: 2em;
     font-weight: 700;
     padding: 1em 0 0.5em 0;
   }
 
-  .container > p {
+  p {
     color: var(--light-grey);
     padding-right: 0.5em;
   }
@@ -76,6 +89,16 @@
 @media only screen and (max-width: 375px) {
   .container {
     width: 16em;
+  }
+
+  .subline {
+    margin: 2em 2em;
+    padding: 1em 0em 0.5em 0;
+  }
+
+  .title {
+    font-size: 1.5em;
+    margin: 0.5em 0;
   }
 
   .rating-btn {
