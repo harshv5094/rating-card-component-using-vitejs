@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react'
+import { createContext, useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import ThankYou from './pages/ThankYouCard'
@@ -9,6 +9,8 @@ export const RatingContext = createContext()
 
 function App() {
   const [rating, setRating] = useState(0)
+
+  useEffect(() => console.log(rating), [rating])
 
   return (
     <RatingContext.Provider value={{ rating, setRating }}>
